@@ -1,9 +1,15 @@
-h1{
-    color: blue;
+ul{
+    background-color: aqua;
+    font-size: 20px;
 }
+
 h2,h3{
     color: cornflowerblue;
 }
 ol{
     color: red;
+}
+.fotomia{
+    height: 300px;
+    width: 350px;
 }
