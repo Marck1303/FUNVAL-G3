@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d203d;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.imglogin {
+    width: 200px;
+    margin-top: -20px;
+}
+
+#formulariologin {
+    background-color: #ffffff;
+    width: 400px;
+    margin: 30px auto;
+    padding: 0px 5px 10px 5px ;
+    border-radius: 10px;
+    margin-top: -60px;
+}
+
+#formulariologin h1 {
+    padding-top: 20px;
+    padding-right:200px;
+    font-size: 20px;
+    color: #333;
+}
+
+input{
+    width: 90%;
+    padding: 10px;
+    margin: 10px    ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.check-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.forgetpassword {
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#formulariologin button {
+    width: 45%;
+    padding: 10px;
+    margin: 10px 5px;
+    border: none;
+    background-color: #2a3e52;
+    color: white;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #333;
+}
+
+a img {
+    width: 40px;
+    margin: 10px 5px;
+}
+
+.texto {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+}
