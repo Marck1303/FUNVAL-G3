@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mis Prácticas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <a href="./Practica 1/index.html">AQUI SE ENCUENTRA LA PRACTICA CALIFICADA 1</a>
-<br>
-    <a href="./Practica 2/index.html">AQUI SE ENCUENTRA LA PRACTICA CALIFICADA 2</a>
-<br>
-    <a href="./Practica 3/index.html">AQUI SE ENCUENTRA LA PRACTICA CALIFICADA 3</a>
-<br>
-<br>
-<br>
-    <a href="./Dia-6/index.html">Dia 6</a>
-<br>
-    <a href="./Lunes_Tarea/">Tarea</a>
-<br>
-<br>
-    <a href="./Repositorio/index.html">AQUI SE ENCUENTRA MI REPOSITORIO</a>
-<br>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white font-sans min-h-screen flex flex-col items-center py-10 px-4">
+  <header class="mb-10">
+    <h1 class="text-4xl font-bold text-center text-blue-600 dark:text-blue-400">Listado de Prácticas</h1>
+    <p class="text-center text-gray-600 dark:text-gray-300 mt-2">Selecciona una práctica para visualizarla</p>
+  </header>
+
+  <main class="w-full max-w-4xl grid gap-8 md:grid-cols-2">
+    <!-- Sección: Prácticas Calificadas -->
+    <section class="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
+      <h2 class="text-2xl font-semibold mb-4 border-b border-gray-300 dark:border-gray-600 pb-2">Prácticas Calificadas</h2>
+      <ul class="space-y-3">
+        <li><a href="./Practica 1/index.html" class="text-blue-600 hover:underline dark:text-blue-400">Práctica Calificada 1</a></li>
+        <li><a href="./Practica 2/index.html" class="text-blue-600 hover:underline dark:text-blue-400">Práctica Calificada 2</a></li>
+        <li><a href="./Practica 3/index.html" class="text-blue-600 hover:underline dark:text-blue-400">Práctica Calificada 3</a></li>
+      </ul>
+    </section>
+
+    <!-- Sección: Prácticas por Día -->
+    <section class="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
+      <h2 class="text-2xl font-semibold mb-4 border-b border-gray-300 dark:border-gray-600 pb-2">Prácticas por Día</h2>
+      <ul class="space-y-3">
+        <li><a href="./Dia 2/index.html" class="text-blue-600 hover:underline dark:text-blue-400">Día 2</a></li>
+        <li><a href="./Dia 3/index.html" class="text-blue-600 hover:underline dark:text-blue-400">Día 3</a></li>
+        <li><a href="./Dia 4/index.html" class="text-blue-600 hover:underline dark:text-blue-400">Día 4</a></li>
+        <li><a href="./Dia-5/Trabaja_dia5/index.html" class="text-blue-600 hover:underline dark:text-blue-400">Día 5</a></li>
+        <li><a href="./Dia-6/practica-clase/index.html" class="text-blue-600 hover:underline dark:text-blue-400">Día 6</a></li>
+        <li><a href="./Dia-7/practica-1/index.html" class="text-blue-600 hover:underline dark:text-blue-400">Día 7</a></li>
+        <li><a href="./Dia-8/index.html" class="text-blue-600 hover:underline dark:text-blue-400">Día 8</a></li>
+        <li><a href="./Dia-9/index.html" class="text-blue-600 hover:underline dark:text-blue-400">Día 9</a></li>
+        <li><a href="./Dia-10/index.html" class="text-blue-600 hover:underline dark:text-blue-400">Día 10</a></li>
+        <li><a href="./Lunes_Tarea/index.html" class="text-green-600 hover:underline dark:text-green-400">Tarea adicional</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Repositorio -->
+  <footer class="mt-10">
+    <a href="./Repositorio/index.html" class="text-lg text-purple-700 hover:underline dark:text-purple-400 font-medium">📁 Ver Repositorio</a>
+  </footer>
 </body>
 </html>
