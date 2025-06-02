@@ -13,7 +13,10 @@ ul{
 }
 .PRIMERAFILA{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+
 }
 section{
     background-color: orange;
