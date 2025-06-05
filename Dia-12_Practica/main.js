@@ -22,50 +22,54 @@ Este programa permite calcular el área de diferentes figuras geométricas: cuad
 5.  **Manejo de Errores:**
     * Si el usuario ingresa una opción no válida o datos incorrectos,
  el programa mostrará un mensaje de error y solicitará que se ingrese la información nuevamente. */
-let Resultado;
-let Base;
-let Altura;
-
- let opcion = prompt(`
-        Elige el número de opción:
-        Opción 1 : Calcular el área de un cuadrado.
-        Opción 2 : Calcular el área de un rectángulo.
-        Opción 3 : Calcular el área de un triángulo.`);
+ let resultado;
+ let opcion;
+ let base;
+ let altura;
  
-switch (opcion) {
-    case "1":
-        let Lado = parseFloat(prompt("Ingrese el valor del lado del cuadrado:"));
-        if (isNaN(Lado) || Lado <= 0) {
-            alert("Por favor ingrese un número válido para el lado.");
-        } else {
-            Resultado = Lado * Lado;
-            alert(`El área del cuadrado es: ${Resultado}`);
-        }
-        break;
-
-    case "2":
-        Base = parseFloat(prompt("Ingrese la base del rectángulo:"));
-        Altura = parseFloat(prompt("Ingrese la altura del rectángulo:"));
-        if (isNaN(Base) || isNaN(Altura) || Base <= 0 || Altura <= 0) {
-            alert("Por favor ingrese números válidos para base y altura.");
-        } else {
-            Resultado = Base * Altura;
-            alert(`El área del rectángulo es: ${Resultado}`);
-        }
-        break;
-
-    case "3":
-        Base = parseFloat(prompt("Ingrese la base del triángulo:"));
-        Altura = parseFloat(prompt("Ingrese la altura del triángulo:"));
-        if (isNaN(Base) || isNaN(Altura) || Base <= 0 || Altura <= 0) {
-            alert("Por favor ingrese números válidos para base y altura.");
-        } else {
-            Resultado = (Base * Altura) / 2;
-            alert(`El área del triángulo es: ${Resultado}`);
-        }
-        break;
-
-    default:
-        alert("Esta no es una opción válida.");
-        break;
-}
+ while (true) {
+     opcion = prompt(`
+ Elige un número para realizar una operación:
+ 1: Calcular el área de un cuadrado.
+ 2: Calcular el área de un rectángulo.
+ 3: Calcular el área de un triángulo.
+ 4: Salir
+ `);
+ 
+     if (opcion === "1") {
+         let lado = parseFloat(prompt("Ingrese el valor del lado del cuadrado:"));
+         if (isNaN(lado) || lado <= 0) {
+             alert("Por favor ingrese un número válido para el lado.");
+         } else {
+             resultado = lado * lado;
+             alert(`El área del cuadrado es: ${resultado}`);
+         }
+ 
+     } else if (opcion === "2") {
+         base = parseFloat(prompt("Ingrese la base del rectángulo:"));
+         altura = parseFloat(prompt("Ingrese la altura del rectángulo:"));
+         if (isNaN(base) || isNaN(altura) || base <= 0 || altura <= 0) {
+             alert("Por favor ingrese números válidos para base y altura.");
+         } else {
+             resultado = base * altura;
+             alert(`El área del rectángulo es: ${resultado}`);
+         }
+ 
+     } else if (opcion === "3") {
+         base = parseFloat(prompt("Ingrese la base del triángulo:"));
+         altura = parseFloat(prompt("Ingrese la altura del triángulo:"));
+         if (isNaN(base) || isNaN(altura) || base <= 0 || altura <= 0) {
+             alert("Por favor ingrese números válidos para base y altura.");
+         } else {
+             resultado = (base * altura) / 2;
+             alert(`El área del triángulo es: ${resultado}`);
+         }
+ 
+     } else if (opcion === "4") {
+         alert("Estas saliendo de la calculadora");
+         break; // Salimos del bucle
+     } else {
+         alert("Opción no válida. Elija la opción 1, 2, 3 o 4.");
+     }
+ }
+ 
