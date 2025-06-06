@@ -43,4 +43,4 @@ console.log("EJERCICIO 6: (sort)",sort)
 🔄 Instrucción: Investiga cómo funciona el método reverse en JavaScript y utilízalo para mostrar
 los productos en orden inverso. */
 let Productosreverse=[...productos].reverse().map(producto => "Nombre:"+ producto.nombre + "| Precio:"+ producto.precio);
-console.log("EJERCICIO 7: ",Productosreverse);
+console.log("EJERCICIO 7: (reverse)",Productosreverse);
