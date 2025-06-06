@@ -1,6 +1,6 @@
 
 let productos = [{ nombre: "Laptop", precio: 1200 },{ nombre: "Mouse", precio: 25 },{ nombre: "Teclado", precio: 50 },{ nombre: "Monitor", precio: 300 },{ nombre: "Silla Gamer", precio: 450 },{ nombre: "Audífonos", precio: 80 },{ nombre: "Webcam", precio: 60 },{ nombre: "USB 128GB", precio: 30 },{ nombre: "Impresora", precio: 200 },{ nombre: "Tablet", precio: 500 }];
- 
+
 /* 
 1️⃣ Recorrer y mostrar productos (forEach)# 📢 Recorre el array de productos y muestra en la consola el nombre y el precio de cada uno.*/
 let mostrarproductosconsola=[]
@@ -42,6 +42,5 @@ console.log("EJERCICIO 6: (sort)",sort)
 7️⃣ Invertir el orden de los productos (reverse)#
 🔄 Instrucción: Investiga cómo funciona el método reverse en JavaScript y utilízalo para mostrar
 los productos en orden inverso. */
-console.log("EJERCICIO 7:");
-[...productos].reverse().forEach(p => console.log("Nombre:", p.nombre, "| Precio:", p.precio));
-
+let Productosreverse=[...productos].reverse().map(producto => "Nombre:"+ producto.nombre + "| Precio:"+ producto.precio);
+console.log("EJERCICIO 7: ",Productosreverse);
