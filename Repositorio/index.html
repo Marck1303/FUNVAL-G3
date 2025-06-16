@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script src="habilidades.js" defer></script>
-    <script src="./main.js" defer></script>
+    <script src="./main.js" type="module" defer></script>
     <title>Repositorio</title>
 </head>
 <style>
@@ -130,18 +130,11 @@
             </div>
         </div>
         <div class="max-w-screen flex flex-col justify-center items-center gap-6 p-3 my-20">
-            <div class="w-full h-[10%] flex items-center justify-center">
-                <p class="text-black font-bold  text-3xl dark:text-white">Proyectos Desarrollados</p>
-            </div>
-            <div class="w-full grid grid-cols-1 gap-2 items-center justify-center border-none p-3 rounded-3xl bg-gray-400 dark:bg-transparent md:grid-cols-2" >
-                    <img class="border-none rounded-2xl" src="./img/carousel/Chifa_China_fu.png "  alt="Proyecto Chifa China Fu">
-                    <img class="border-none rounded-2xl" src="./img/carousel/Compacto.png"  alt="Proyecto Compacto">
-            </div>
             <section class="my-8 px-4">
                 <h2 class="text-3xl font-bold mb-4 text-center">Proyectos Móviles</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
-                  <img src="img/carousel/Botica-carrito.png" alt="Proyecto 1" class="max-w-xs h-48 object-cover rounded shadow" />
-                  <img src="img/carousel/Botica-productos.png" alt="Proyecto 2" class="max-w-xs h-48 object-cover rounded shadow" />
+                  <img src="img/carousel/Botica-carrito.png" alt="Proyecto 1" class="max-w-xs h-56 object-cover rounded shadow" />
+                  <img src="img/carousel/Botica-productos.png" alt="Proyecto 2" class="max-w-xs h-56 object-cover rounded shadow" />
                 </div>
               </section>
 
@@ -197,7 +190,7 @@
                     </select>
                 </div>
                 <div class="md:col-span-2 lg:col-span-2">
-                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mensaje</label>
+                    <label for="messagee" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mensaje</label>
                     <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Deja un mensaje..."></textarea>
                     <small id="char-count" class="text-gray-500">0/300 caracteres</small>
                 </div>

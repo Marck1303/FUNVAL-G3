@@ -1,3 +1,30 @@
+import { listaProyectos } from './proyectos.js';
+
+
+function mostrarProyectos() {
+    const contenedor = document.getElementById("contenedor-proyectos");
+    if (!contenedor) return;
+  
+    listaProyectos.forEach(proyecto => {
+      const card = document.createElement("div");
+      card.className = "bg-white rounded-2xl shadow-lg overflow-hidden transform transition hover:scale-105 dark:bg-gray-800";
+  
+      card.innerHTML = `
+        <img src="${proyecto.imagen}" alt="${proyecto.titulo}" class="w-full max-h-64 object-contain mx-auto">
+        <div class="p-5 flex flex-col gap-2">
+          <h2 class="text-xl font-bold text-gray-800 dark:text-white">${proyecto.titulo}</h2>
+          <p class="text-gray-600 dark:text-gray-300">${proyecto.descripcion}</p>
+        </div>
+      `;
+  
+      contenedor.appendChild(card);
+    });
+  }
+  
+  document.addEventListener("DOMContentLoaded", mostrarProyectos);
+
+
+
 //AMPLIAR O ESCONDER EL TEXTO
 const toggleBtn = document.getElementById("toggle-btn");
     const extraParagraph = document.getElementById("parrafo-extra");
