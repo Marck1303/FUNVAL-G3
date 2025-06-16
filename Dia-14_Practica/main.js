@@ -21,7 +21,7 @@ console.log("EJERCICIO 2 PARTE 2 (map + includes):",disponible)
 
 /* 
 3️⃣ Aplicar un descuento a los productos (map)#💰 Crea un nuevo array con los productos, aplicando un 10% de descuento a los precios.*/
-DescuentoAplicado= productos.map(producto=>"Nombre: "+producto.nombre +"| Producto "+(producto.precio*(10/100)))
+DescuentoAplicado= productos.map(producto=>"Nombre: "+producto.nombre +"| Producto "+(producto.precio*(90/100)))
 console.log("EJERCICIO 3: (map) ",DescuentoAplicado)
 
 /* 

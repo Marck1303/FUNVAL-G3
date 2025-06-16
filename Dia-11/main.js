@@ -108,3 +108,10 @@ console.log("¿Me quedo en casa?:", meQuedoCasa);
 console.log("¿Puedo salir a comer?:", puedoSalirComer);
 console.log("¿Puedo avanzar mi proyecto?:", avanzarProyecto);
 console.log("¿Puedo conectarme a internet?:", puedoConectarme);
+
+
+console.log(10 > 5 && 5 > 8)
+console.log(10 == "10")
+
+console.log(Boolean(3))
+let x = 4; console.log(x == "4");
