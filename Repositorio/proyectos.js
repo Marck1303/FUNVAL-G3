@@ -7,7 +7,7 @@ export const listaProyectos = [
     {
       titulo: "App de Pedidos",
       descripcion: "App móvil con carrito de compras y delivery.",
-      imagen: "./img/carousel/Compacto.png"
+      imagen: "./img/carousel/Compacto.png  "
     },
     {
       titulo: "Portafolio",
