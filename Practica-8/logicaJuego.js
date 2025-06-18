@@ -1,5 +1,5 @@
 import { estado } from './estado.js';
-import { actualizarTableroUI, actualizarPuntajes, mostrarModalGanador } from './interfaz.js';
+import { actualizarTableroUI, actualizarPuntajes, mostrarModalGanador } from './Interfaz.js';
 
 // Combinaciones ganadoras posibles
 const combinacionesGanadoras = [

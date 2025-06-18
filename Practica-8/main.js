@@ -1,5 +1,5 @@
 // Importa las funciones necesarias de otros módulos
-import { ocultarModalGanador } from './interfaz.js';
+import { ocultarModalGanador } from './Interfaz.js';
 import { realizarJugada, reiniciarJuego } from './logicaJuego.js';
 import { estado } from './estado.js';
 
