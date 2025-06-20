@@ -70,9 +70,7 @@ function traerDatos() {
   
   let lista = document.querySelector("#lista");
   
-datos.forEach(() => {
-    lista.innerHTML += `<div class= "bg-gray-200 animate-pulse rounded-xl w-64 h-28 p-6"></div>`
-  });
+
 
 traerDatos()    
     .then((datos) => {
